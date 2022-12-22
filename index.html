@@ -1,15 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link href="dist/output.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.css"
-    />
+    <link href="dist/css/final.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header Start -->
@@ -42,36 +38,47 @@
             </button>
             <nav
               id="nav-menu"
-              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-600"
             >
               <ul class="block lg:flex">
                 <li class="group">
                   <a
                     href="#home"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
                     >Home</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#about"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
                     >About</a
                   >
                 </li>
                 <li class="group">
                   <a
-                    href="#porfolio"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    href="#portfolio"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
                     >Portfolio</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#contact"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
                     >Contact</a
                   >
+                </li>
+                <li class="flex items-center mt-3 ml-8 lg:mt-0 lg:ml-8">
+                  <div class="flex">
+                    <span class="mr-2 text-base text-dark dark:text-white">Dark Mode</span>
+                    <input type="checkbox" class="hidden" id="dark-toggle">
+                    <label for="dark-toggle">
+                      <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-secondary p-1">
+                        <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                      </div>
+                    </label>
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -82,7 +89,7 @@
     <!-- Header End -->
 
     <!-- Hero Section Start -->
-    <section id="home" class="pt-36">
+    <section id="home" class="pt-36 dark:bg-dark">
       <div class="container xl:mx-auto">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
@@ -90,19 +97,19 @@
               class="text-lg font-semibold text-primary md:text-xl lg:text-2xl"
             >
               Hello everyone👋, my name is
-              <span class="block font-bold text-dark text-4xl lg:text-5xl">
+              <span class="block font-bold text-dark text-4xl lg:text-5xl dark:text-white">
                 Ahmad Ahsin Syamil</span
               >
             </h1>
             <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">
-              Student | <span class="text-dark"> Web Developer </span>
+              Student | <span class="text-dark dark:text-white"> Web Developer </span>
             </h2>
             <p class="font-medium text-secondary mb-10 leading-relaxed">
               "Do good Perfectly"
             </p>
             <a
               href=""
-              class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:bg-opacity-80 transition duration-300 ease-in-out"
+              class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:bg-opacity-80  transition duration-300 ease-in-out"
               >Contact Me</a
             >
           </div>
@@ -111,10 +118,10 @@
               <img
                 src="dist/img/photo.png"
                 alt="Ahmad"
-                class="max-w-full mx-auto"
+                class="max-w-full mx-auto relative z-10"
               />
               <span
-                class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125"
+                class="absolute -bottom-0 left-1/2 -translate-x-1/2 md:scale-125"
               >
                 <svg
                   width="400"
@@ -137,14 +144,14 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-    <section id="about" class="pt-36 pb-32">
+    <section id="about" class="pt-36 pb-32 dark:bg-dark">
       <div class="container xl:mx-auto">
         <div class="flex flex-wrap">
           <div class="w-full px-4 mb-10 lg:w-1/2">
             <h4 class="font-bold uppercase text-primary text-lg mb-3">
               About Me
             </h4>
-            <h2 class="font-bold text-dark text-2xl mb-5 max-w-lg">
+            <h2 class="font-bold text-dark text-2xl mb-5 max-w-lg dark:text-white">
               How do i get to know the world of coding
             </h2>
             <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">
@@ -155,7 +162,7 @@
           </div>
           <div class="w-full px-4 lg:w-1/2">
             <h3
-              class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-9"
+              class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-9 dark:text-white"
             >
               Let's be friends
             </h3>
@@ -168,7 +175,7 @@
               <a
                 href="https://instagram.com/ahmadahsins"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-dark hover:border-primary hover:bg-primary hover:text-white transition duration-300"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-dark hover:border-primary hover:bg-primary hover:text-white transition duration-300 dark:text-white dark:border-white dark:hover:text-dark dark:hover:border-primary"
               >
                 <svg
                   role="img"
@@ -186,7 +193,7 @@
               <a
                 href="https://www.facebook.com/ahmad.a.syamil.7?mibextid=ZbWKwL"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-dark hover:border-primary hover:bg-primary hover:text-white transition duration-300"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-dark hover:border-primary hover:bg-primary hover:text-white transition duration-300 dark:text-white dark:border-white dark:hover:text-dark dark:hover:border-primary"
               >
                 <svg
                   role="img"
@@ -204,7 +211,7 @@
               <a
                 href="https://twitter.com/ahmdozora?t=trFiJnxaWm-u3OeW5VCo2w&s=08"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-dark hover:border-primary hover:bg-primary hover:text-white transition duration-300"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-dark hover:border-primary hover:bg-primary hover:text-white transition duration-300 dark:text-white dark:border-white dark:hover:text-dark dark:hover:border-primary"
               >
                 <svg
                   role="img"
@@ -222,7 +229,7 @@
               <a
                 href="https://www.tiktok.com/@ozo.rara?_t=8YLuAxsFujq&_r=1"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-dark hover:border-primary hover:bg-primary hover:text-white transition duration-300"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-dark hover:border-primary hover:bg-primary hover:text-white transition duration-300 dark:text-white dark:border-white dark:hover:text-dark dark:hover:border-primary"
               >
                 <svg
                   role="img"
@@ -240,7 +247,7 @@
               <a
               href="https://github.com/ahmadahsins"
               target="_blank"
-              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-dark hover:border-primary hover:bg-primary hover:text-white transition duration-300"
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-dark hover:border-primary hover:bg-primary hover:text-white transition duration-300 dark:text-white dark:border-white dark:hover:text-dark dark:hover:border-primary"
             >
             <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20"
             class="fill-current"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
@@ -253,14 +260,14 @@
     <!-- About Section End -->
 
     <!-- Portfolio Section Start -->
-    <section id="portfolio" class="pt-36 pb-16 bg-slate-300">
+    <section id="portfolio" class="pt-36 pb-16 bg-slate-300 dark:bg-slate-800">
       <div class="container xl:mx-auto">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-bold uppercase text-primary text-lg mb-3">
               Portfolio
             </h4>
-            <h2 class="font-bold text-2xl mb-5 sm:text-3xl lg:text-4xl">
+            <h2 class="font-bold text-2xl mb-5 sm:text-3xl lg:text-4xl text-dark dark:text-white">
               My Newest Project
             </h2>
             <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">
@@ -274,9 +281,9 @@
           class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
         >
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-lg shadow-lg overflow-hidden p-4 bg-slate-200">
+            <div class="rounded-lg shadow-lg overflow-hidden p-4 bg-slate-200 dark:bg-dark">
               <img src="dist/img/1.png" alt="Landing Page" width="w-full" />
-              <h3 class="font-semibold text-xl text-mt-5 mb-3 pt-2">
+              <h3 class="font-semibold text-xl text-dark text-mt-5 mb-3 pt-2 dark:text-white">
                 My Landing Page
               </h3>
               <p
@@ -288,9 +295,9 @@
             </div>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-lg shadow-lg overflow-hidden p-4 bg-slate-200">
+            <div class="rounded-lg shadow-lg overflow-hidden p-4 bg-slate-200 dark:bg-dark">
               <img src="dist/img/2.png" alt="E-commerse" width="w-full" />
-              <h3 class="font-semibold text-xl text-mt-5 mb-3 pt-2">
+              <h3 class="font-semibold text-xl text-dark text-mt-5 mb-3 pt-2 dark:text-white">
                 E-commerse
               </h3>
               <p
@@ -302,9 +309,9 @@
             </div>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-lg shadow-lg overflow-hidden p-4 bg-slate-200">
+            <div class="rounded-lg shadow-lg overflow-hidden p-4 bg-slate-200 dark:bg-dark">
               <img src="dist/img/3.png" alt="Landing Page" width="w-full" />
-              <h3 class="font-semibold text-xl text-mt-5 mb-3 pt-2">
+              <h3 class="font-semibold text-xl text-dark text-mt-5 mb-3 pt-2 dark:text-white">
                 Company Landing Page
               </h3>
               <p
@@ -316,9 +323,9 @@
             </div>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-lg shadow-lg overflow-hidden p-4 bg-slate-200">
+            <div class="rounded-lg shadow-lg overflow-hidden p-4 bg-slate-200 dark:bg-dark">
               <img src="dist/img/4.png" alt="Game" width="w-full" />
-              <h3 class="font-semibold text-xl text-mt-5 mb-3 pt-2">Game</h3>
+              <h3 class="font-semibold text-xl text-dark text-mt-5 mb-3 pt-2 dark:text-white">Game</h3>
               <p
                 class="font-medium text-base text-secondary max-w-xl lg:text-lg"
               >
@@ -334,14 +341,14 @@
     <!-- Portfolio Section End -->
 
     <!-- Contact Section Start -->
-    <section id="contact" class="pt-36 pb-32">
+    <section id="contact" class="pt-36 pb-32 dark:bg-dark">
       <div class="container xl:mx-auto">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-bold uppercase text-primary text-lg mb-3">
               Contact
             </h4>
-            <h2 class="font-bold text-2xl mb-5 sm:text-3xl lg:text-4xl">
+            <h2 class="font-bold text-2xl mb-5 sm:text-3xl lg:text-4xl dark:text-white">
               Contact Me
             </h2>
             <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">
@@ -398,19 +405,19 @@
     <!-- Contact Section End -->
 
     <!-- Footer Section Start -->
-    <footer class="bg-slate-800 pt-12 pb-24">
+    <footer class="bg-slate-800 pt-12 pb-24 dark:bg-secondary">
       <div class="container xl:mx-auto">
         <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-12 text-secondary font-medium md:w-1/2">
-            <h3 class="font-bold text-xl text-white mb-5">
+          <div class="w-full px-4 mb-12 text-secondary font-medium md:w-1/2 dark:text-slate-800">
+            <h3 class="font-bold text-xl text-white mb-5 dark:text-dark">
               Ahmad Ahsin Syamil
             </h3>
             <h3 class="font-bold text-xl">Contact Me</h3>
             <p>ahmadahsin006@gmail.com</p>
           </div>
           <div class="w-full px-4 mb-12 text-slate-400 font-medium md:w-1/2">
-            <h3 class="font-bold text-xl text-white mb-5">Link</h3>
-            <ul class="text-secondary">
+            <h3 class="font-bold text-xl text-white mb-5 dark:text-dark">Link</h3>
+            <ul class="text-secondary dark:text-slate-800">
               <li>
                 <a
                   href="#home"
@@ -447,7 +454,7 @@
             <a
               href="https://instagram.com/ahmadahsins"
               target="_blank"
-              class="w-9 h-9 mr-3 text-white rounded-full flex justify-center items-center border border-white hover:border-primary hover:bg-primary hover:text-dark transition duration-300"
+              class="w-9 h-9 mr-3 text-white rounded-full flex justify-center items-center border border-white hover:border-primary hover:bg-primary hover:text-dark transition duration-300 dark:text-dark dark:border-dark dark:hover:text-white dark:hover:border-primary"
             >
               <svg
                 role="img"
@@ -465,7 +472,7 @@
             <a
               href="https://www.facebook.com/ahmad.a.syamil.7?mibextid=ZbWKwL"
               target="_blank"
-              class="w-9 h-9 mr-3 text-white rounded-full flex justify-center items-center border border-white hover:border-primary hover:bg-primary hover:text-dark transition duration-300"
+              class="w-9 h-9 mr-3 text-white rounded-full flex justify-center items-center border border-white hover:border-primary hover:bg-primary hover:text-dark transition duration-300 dark:text-dark dark:border-dark dark:hover:text-white dark:hover:border-primary"
             >
               <svg
                 role="img"
@@ -483,7 +490,7 @@
             <a
               href="https://twitter.com/ahmdozora?t=trFiJnxaWm-u3OeW5VCo2w&s=08"
               target="_blank"
-              class="w-9 h-9 mr-3 text-white rounded-full flex justify-center items-center border border-white hover:border-primary hover:bg-primary hover:text-dark transition duration-300"
+              class="w-9 h-9 mr-3 text-white rounded-full flex justify-center items-center border border-white hover:border-primary hover:bg-primary hover:text-dark transition duration-300 dark:text-dark dark:border-dark dark:hover:text-white dark:hover:border-primary"
             >
               <svg
                 role="img"
@@ -501,7 +508,7 @@
             <a
               href="https://www.tiktok.com/@ozo.rara?_t=8YLuAxsFujq&_r=1"
               target="_blank"
-              class="w-9 h-9 mr-3 text-white rounded-full flex justify-center items-center border border-white hover:border-primary hover:bg-primary hover:text-dark transition duration-300"
+              class="w-9 h-9 mr-3 text-white rounded-full flex justify-center items-center border border-white hover:border-primary hover:bg-primary hover:text-dark transition duration-300 dark:text-dark dark:border-dark dark:hover:text-white dark:hover:border-primary"
             >
               <svg
                 role="img"
@@ -519,19 +526,26 @@
             <a
               href="https://github.com/ahmadahsins"
               target="_blank"
-              class="w-9 h-9 mr-3 text-white rounded-full flex justify-center items-center border border-white hover:border-primary hover:bg-primary hover:text-dark transition duration-300"
+              class="w-9 h-9 mr-3 text-white rounded-full flex justify-center items-center border border-white hover:border-primary hover:bg-primary hover:text-dark transition duration-300 dark:text-dark dark:border-dark dark:hover:text-white dark:hover:border-primary"
             >
             <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20"
             class="fill-current"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
             </a>
           </div>
-          <p class="font-medium text-sm text-secondary text-center">
-            Dibuat dengan <span class="text-pink-600"></span>❤️</span>oleh <a href="https://instagram.com/ahmadahsins" target="_blank" class="font-bold text-primary">Ahmad Ahsin Syamil</a>, menggunakan <a href="https://tailwindcss.com" target="_blank" class="font-bold text-sky-500">TailwindCSS</a>.
+          <p class="font-medium text-sm text-secondary text-center dark:text-dark">
+            Made with <span class="text-pink-600"></span>❤️</span> by <a href="https://instagram.com/ahmadahsins" target="_blank" class="font-bold text-primary dark:text-blue-900">Ahmad Ahsin Syamil</a> using <a href="https://tailwindcss.com" target="_blank" class="font-bold text-sky-500 dark:text-sky-700">Tailwind CSS</a>.
           </p>
         </div>
       </div>
     </footer>
     <!-- Footer Section End -->
+    
+    <!-- Back to top Start -->
+    <a href="#home" class="h-14 w-14 bg-primary fixed rounded-full z-[9999] bottom-4 right-4 p-4 hidden hover:animate-pulse" id="to-top" >
+      <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"class="fill-current"\><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm5.247 15l-5.247-6.44-5.263 6.44-.737-.678 6-7.322 6 7.335-.753.665z"/></svg>
+    </a>
+    <!-- Back to top End -->
     <script src="dist/js/script.js"></script>
   </body>
 </html>
+
