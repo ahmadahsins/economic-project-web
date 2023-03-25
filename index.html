@@ -6,11 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+    <script src="jquery.js"></script>
     <title>Asuransi</title>
     <link href="dist/output.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- Header Start -->
+    
+  <!-- loading goes here -->
+  <div class="loader-wrapper">
+    <svg class="loader" width="200" height="200" viewBox="0 0 100 100">
+      <polyline class="line-cornered stroke-still" points="0,0 100,0 100,100" stroke-width="10" fill="none"></polyline>
+      <polyline class="line-cornered stroke-still" points="0,0 0,100 100,100" stroke-width="10" fill="none"></polyline>
+      <polyline class="line-cornered stroke-animation" points="0,0 100,0 100,100" stroke-width="10" fill="none">
+      </polyline>
+      <polyline class="line-cornered stroke-animation" points="0,0 0,100 100,100" stroke-width="10" fill="none">
+      </polyline>
+    </svg>
+  </div>
+  <script>
+    $("html").css("overflow", "hidden");
+    $(window).on("load", function () {
+      $(".loader-wrapper").fadeOut("slow");
+      $("html").css("overflow-y", "visible");
+    });
+  </script> 
+
+  <!-- Header Start -->
     <header
       class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
     >
@@ -41,7 +62,7 @@
             </button>
             <nav
               id="nav-menu"
-              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-600"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full drop-shadow-xl lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark"
             >
               <ul class="block lg:flex uppercase">
                 <li class="group my-8 drop-shadow-xl">
@@ -91,7 +112,7 @@
     <section id="home" class="lg:p-36 pt-20 pb-32 dark:bg-dark">
       <div class="container lg:mx-auto">
         <div class="flex flex-wrap">
-          <div class="w-full self-center px-4 z-10 lg:w-1/2">
+          <div class="w-full self-center px-4 lg:w-1/2">
             <h2 class="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-yellow-400 text-2xl mb-2 lg:text-3xl">
               WEB EDUKASI EKONOMI
             </h2>
@@ -109,7 +130,7 @@
               >Let's Go!</a>
             </div>
           </div>
-          <div class="mt-10 lg:mt-0 z-0">
+          <div class="mt-10 lg:mt-0 -z-50">
             <img
               src="dist/img/insurance.png"
               alt="asuransi"
@@ -344,7 +365,7 @@
     <!-- thanks Section End -->
 
     <!-- Footer Section Start -->
-    <footer class="bg-gradient-to-br from-blue-700 via-blue-500 to-teal-400 pt-20 pb-24">
+    <footer class="bg-gradient-to-br from-blue-800 via-blue-500 to-teal-400 pt-20 pb-24">
       <div class="container xl:mx-auto">
         <div class="w-full text-center">
           <p class="font-medium text-base text-slate-300 text-center" data-aos="fade-up">
