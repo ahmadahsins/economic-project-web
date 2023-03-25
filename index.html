@@ -13,15 +13,8 @@
   <body>
 
   <!-- loading goes here -->
-  <div class="loader-wrapper">
-    <svg class="loader" width="200" height="200" viewBox="0 0 100 100">
-      <polyline class="line-cornered stroke-still" points="0,0 100,0 100,100" stroke-width="10" fill="none"></polyline>
-      <polyline class="line-cornered stroke-still" points="0,0 0,100 100,100" stroke-width="10" fill="none"></polyline>
-      <polyline class="line-cornered stroke-animation" points="0,0 100,0 100,100" stroke-width="10" fill="none">
-      </polyline>
-      <polyline class="line-cornered stroke-animation" points="0,0 0,100 100,100" stroke-width="10" fill="none">
-      </polyline>
-    </svg>
+  <div class="loader-wrapper flex items-center justify-center h-screen">
+    <img src="dist/img/loader.gif" alt="loader" class="w-20 lg:w-32">
   </div>
   <script>
     $("html").css("overflow", "hidden");
@@ -391,13 +384,14 @@
     </script>
     <script>
       gsap.registerPlugin(TextPlugin);
-      gsap.from("header li", { duration: 1.5, y: "-100%", opacity: 0, ease: 'bounce' });
-      gsap.from(".div-a", { duration: 1.5, x: '-50%', opacity: 0, ease: 'back' });
-      gsap.to("#by", { duration: 4.5, delay: 2, text: "By : <br> Ahmad Ahsin Syamil (01) <br> Muhammad Arkan Labib (21)" });
-      gsap.from(".img-hero", { duration: 1.5, x: '50%', opacity: 0, ease: 'back' });
-      gsap.from("#home h1", { duration: 1.5, delay: 0.25, x: '-50%', opacity: 0, ease: 'back' });
-      gsap.from("#home h2", { duration: 1.5, x: '-50%', opacity: 0, ease: 'back' });
-      gsap.from("#go", { duration: 1.5, delay: 0.5, x: '-50%', opacity: 0, ease: 'back' });
+      gsap.from("#hamburger", {duration: 1.5, delay: 0.5, x: "100%", opacity: 0, ease: 'back'});
+      gsap.from("header li", { duration: 1.5, delay:0.5, y: "-100%", opacity: 0, ease: 'bounce' });
+      gsap.from(".div-a", { duration: 1.5, delay:0.5, x: '-50%', opacity: 0, ease: 'back' });
+      gsap.to("#by", { duration: 4.5, delay: 2.5, text: "By : <br> Ahmad Ahsin Syamil (01) <br> Muhammad Arkan Labib (21)" });
+      gsap.from(".img-hero", { duration: 1.5, delay:0.5, x: '50%', opacity: 0, ease: 'back' });
+      gsap.from("#home h1", { duration: 1.5, delay: 0.75, x: '-50%', opacity: 0, ease: 'back' });
+      gsap.from("#home h2", { duration: 1.5, delay:0.5, x: '-50%', opacity: 0, ease: 'back' });
+      gsap.from("#go", { duration: 1.5, delay: 1, x: '-50%', opacity: 0, ease: 'back' });
     </script>
     </body>
 </html>
