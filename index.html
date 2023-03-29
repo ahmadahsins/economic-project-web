@@ -41,7 +41,7 @@
             </button>
             <nav
               id="nav-menu"
-              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-600"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark"
             >
               <ul class="block lg:flex uppercase">
                 <li class="group my-8 drop-shadow-xl">
@@ -373,6 +373,7 @@
       gsap.from("header li", { duration: 1.5, y: "-100%", opacity: 0, ease: 'bounce' });
       gsap.from(".div-a", { duration: 1.5, x: '-50%', opacity: 0, ease: 'back' });
       gsap.to("#by", { duration: 4.5, delay: 2, text: "By : <br> Ahmad Ahsin Syamil (01) <br> Muhammad Arkan Labib (21)" });
+      gsap.from("#hamburger", { duration: 1.5, x: '50%', opacity: 0, ease: 'back' });
       gsap.from(".img-hero", { duration: 1.5, x: '50%', opacity: 0, ease: 'back' });
       gsap.from("#home h1", { duration: 1.5, delay: 0.25, x: '-50%', opacity: 0, ease: 'back' });
       gsap.from("#home h2", { duration: 1.5, x: '-50%', opacity: 0, ease: 'back' });
