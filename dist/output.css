@@ -47,16 +47,13 @@ html {
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
+  overflow-x: hidden;
 }
 
 /*
 1. Remove the margin in all browsers.
 2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
 */
-
-html {
-  overflow-x: hidden;
-}
 
 body {
   margin: 0;
